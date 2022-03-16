@@ -18,9 +18,9 @@ form.addEventListener("submit", function (e) {
     check6 == true &&
     check7 == true
   ) {
-    console.log("nice");
+    alert("le formulaire a bien été envoyé");
   } else {
-    e.preventDefault();
+    e.preventDefault(); // on empèche le formulaire d'être envoyé
   }
 });
 
@@ -158,7 +158,7 @@ function checkAge() {
     document.getElementById("Age").style.color = "black";
     return true;
   } else {
-    messageAge.innerHTML = "vous devez êtres majeurs";
+    messageAge.innerHTML = "vous devez être majeur";
     noeudAge.parentNode.insertBefore(messageAge, noeudAge.nextElementSibling);
     document.getElementById("Age").style.color = "red";
     return false;
